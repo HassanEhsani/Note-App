@@ -34,3 +34,10 @@ notesContaier.addEventListener("click", function (e) {
         })
     }
 })
+
+document.addEventListener("keydown",event=>{
+    if(event.key === "Enter"){
+        document.execCommand("insertLineBrreak");
+        event.preventDefault();
+    }
+})
